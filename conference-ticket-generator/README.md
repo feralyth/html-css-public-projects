@@ -62,4 +62,4 @@ I want to code big things like e-commerce only using html css offcourse with fas
 
 ## Author
 
-- Frontend Mentor - [@Feralyth](https://www.frontendmentor.io/profile/Feralyth)
+- Frontend Mentor - [Feralyth](https://www.frontendmentor.io/profile/Feralyth)

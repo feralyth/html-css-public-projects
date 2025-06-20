@@ -33,7 +33,7 @@ Hi my name Feralyth I’m currios about front-end development and continuously l
 Feel free to connect with me or check out my other work:
 
 - GitHub: [feralyth](https://github.com/feralyth)
-- Twitter: [@feralyth](https://x.com/feralyth)
+- Twitter: [feralyth](https://x.com/feralyth)
 
 ---
 
