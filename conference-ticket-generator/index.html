@@ -1,0 +1,245 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Conference Ticket - Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="header-logo" src="./assets/images/logo-mark.svg" alt="Logo Coding Conf">
+        <h2>Coding Conf</h2>
+    </header>
+
+    <main class="main-container">
+        <section class="top-content-container">
+            <h1 class="top-content-title fw-400">Your Journey to Coding Conf 2025 Starts Here!</h1>
+            <p class="top-content-desc">
+                Secure your spot at next year's biggest coding conference
+            </p>
+        </section>
+
+        <section>
+            <form id="form" class="input-container">
+                <fieldset>
+                    <label for="avatar" class="label-input">Upload Avatar</label>
+                    <input type="file" id="avatar" name="avatar" hidden>
+                    <div id="input-file-drop-area" tabindex="0" class="input-file">
+                        <button type="button" id="button-upload-avatar" class="button-upload-avatar">
+                        </button>
+                        <div>
+                            <p id="text-drag-drop-upload-avatar">Drag and drop or click to upload</p>
+                            <div id="button-actions-avatar" class="input-file-action-button">
+                                <button type="button" id="button-remove-avatar" class="button-action-avatar">Remove
+                                    image</button>
+                                <button type="button" id="button-change-avatar" class="button-action-avatar">Change
+                                    image</button>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="info-text" class="info-text">
+                        <img src="assets/images/icon-info.svg" alt="Icon info for upload avatar">
+                        Upload your photo (JPG or PNG, max size: 500KB).
+                    </span>
+                    <span id="avatar_error" class="error-text hidden">
+                        <img src="assets/images/icon-error.svg" alt="Icon error for upload avatar">
+                        Please upload your photo JPG or PNG and max size: 500KB.
+                    </span>
+                </fieldset>
+
+                <fieldset>
+                    <label for="full_name" class="label-input">Full Name</label>
+                    <input type="text" id="full_name" name="full_name" placeholder="Jhon Doe" class="input-text">
+                    <span id="full_name_error" class="error-text hidden">
+                        <img src="assets/images/icon-error.svg" alt="Icon error for upload avatar">
+                        Please enter your full name
+                    </span>
+                </fieldset>
+
+                <fieldset>
+                    <label for="email" class="label-input">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" class="input-text">
+                    <span id="email_error" class="error-text hidden">
+                        <img src="assets/images/icon-error.svg" alt="Icon error for upload avatar">
+                        Please enter your valid email address
+                    </span>
+                </fieldset>
+
+                <fieldset>
+                    <label for="github_username" class="label-input">Github Username</label>
+                    <input type="text" id="github_username" name="github_username" placeholder="@yourusername"
+                        class="input-text">
+                    <span id="github_username_error" class="error-text hidden">
+                        <img src="assets/images/icon-error.svg" alt="Icon error for upload avatar">
+                        Please enter your github username
+                    </span>
+                </fieldset>
+
+                <button type="submit" class="button-generate">
+                    Generate My Ticket
+                </button>
+        </section>
+        </form>
+
+    </main>
+
+
+    <footer>Challenge by <a href="https://frontendmentor.io" target="_blank">Frontend Mentor</a></footer>
+    <!-- Decorative Element -->
+    <div class="decorative-container">
+        <img class="pattern-line" src="./assets/images/pattern-lines.svg" aria-hidden="true">
+        <img class="pattern-squiggly-top" src="./assets/images/pattern-squiggly-line-top.svg" aria-hidden="true">
+        <picture>
+            <source media="(min-width:768px)" srcset="./assets/images/pattern-squiggly-line-bottom-desktop.svg">
+            <img class="pattern-squiggly-bottom" src="./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"
+                aria-hidden="true">
+        </picture>
+        <img class="pattern-circle desktop-hidden" src='./assets/images/pattern-circle.svg' aria-hidden="true">
+        <img class="pattern-circle-top mobile-hidden" src='./assets/images/pattern-circle.svg' aria-hidden="true">
+    </div>
+</body>
+
+</html>
+
+<script>
+    window.addEventListener('pageshow', () => {
+        localStorage.clear();
+        document.getElementById("full_name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("github_username").value = "";
+    });
+    const defaultAvatarURL = "./assets/images/icon-upload.svg";
+    const buttonUploadAvatar = document.getElementById("button-upload-avatar");
+    const inputFileAvatar = document.getElementById("avatar");
+    const buttonActionsAvatar = document.getElementById("button-actions-avatar");
+    const buttonRemoveAvatar = document.getElementById("button-remove-avatar");
+    const buttonChangeAvatar = document.getElementById("button-change-avatar");
+    const inputFileDropArea = document.getElementById("input-file-drop-area");
+
+    let uploadedURLAvatar = ""
+
+    const handlePreviewAvatar = (file) => {
+        const reader = new FileReader();
+
+        if (file &&
+            (file.type === 'image/jpeg' || file.type === 'image/png') &&
+            file.size <= 512000) {
+            document.getElementById('info-text').classList.remove('hidden');
+            document.getElementById('avatar_error').classList.add('hidden');
+        } else {
+            document.getElementById('info-text').classList.add('hidden');
+            document.getElementById('avatar_error').classList.remove('hidden');
+            return
+        }
+        reader.onload = () => {
+            uploadedURLAvatar = reader.result
+            buttonUploadAvatar.style.backgroundImage = `url(${reader.result})`;
+            document.getElementById("text-drag-drop-upload-avatar").style.display = "none";
+            buttonActionsAvatar.style.display = "flex";
+            buttonUploadAvatar.style.backgroundSize = "cover";
+            buttonUploadAvatar.style.border = `0.2px solid white`;
+        }
+
+        reader.readAsDataURL(file);
+    }
+
+    inputFileDropArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        inputFileDropArea.classList.add('dragover')
+    })
+
+    inputFileDropArea.addEventListener('dragleave', (e) => {
+        e.preventDefault();
+        inputFileDropArea.classList.remove('dragover')
+    })
+
+    inputFileDropArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const files = e.dataTransfer.files;
+        inputFileDropArea.classList.remove('dragover')
+
+        if (files.length > 0) {
+            handlePreviewAvatar(files[0]);
+        }
+    })
+
+    buttonUploadAvatar.addEventListener('click', () => {
+        inputFileAvatar.click();
+    });
+
+    buttonChangeAvatar.addEventListener('click', () => {
+        inputFileAvatar.click();
+    });
+
+    buttonRemoveAvatar.addEventListener('click', () => {
+        inputFileAvatar.value = '';
+        document.getElementById("text-drag-drop-upload-avatar").style.display = "block";
+        buttonActionsAvatar.style.display = "none";
+        buttonUploadAvatar.style.backgroundImage = `url(${defaultAvatarURL})`;
+        buttonUploadAvatar.style.backgroundSize = "auto";
+        buttonUploadAvatar.style.border = "0"
+    })
+
+    inputFileAvatar.addEventListener("change", () => {
+        const file = inputFileAvatar.files[0];
+        if (file && file.name !== "") {
+            handlePreviewAvatar(file)
+        }
+    });
+
+
+    const formValidation = () => {
+        let valid = true;
+        const avatarURL = uploadedURLAvatar;
+        const fullName = document.getElementById('full_name').value;
+        const email = document.getElementById('email').value;
+        const githubUsername = document.getElementById('github_username').value;
+
+        if (avatarURL === "") {
+            document.getElementById('info-text').classList.add('hidden');
+            document.getElementById('avatar_error').classList.remove('hidden');
+            valid = false;
+        } else {
+            document.getElementById('info-text').classList.remove('hidden');
+            document.getElementById('avatar_error').classList.add('hidden');
+        }
+
+        if (fullName === "") {
+            document.getElementById('full_name_error').classList.remove('hidden');
+            valid = false;
+        } else {
+            document.getElementById('full_name_error').classList.add('hidden');
+        }
+
+        if (email === "") {
+            document.getElementById('email_error').classList.remove('hidden');
+            valid = false;
+        } else {
+            document.getElementById('email_error').classList.add('hidden');
+        }
+
+        if (githubUsername === "") {
+            document.getElementById('github_username_error').classList.remove('hidden');
+            valid = false;
+        } else {
+            document.getElementById('github_username_error').classList.add('hidden');
+        }
+
+        if (valid) {
+            sessionStorage.setItem("avatar_url", avatarURL);
+            sessionStorage.setItem("full_name", fullName);
+            sessionStorage.setItem("email", email);
+            sessionStorage.setItem("github_username", githubUsername);
+            return valid;
+        }
+    }
+
+    // Send data to ticket page
+    document.getElementById('form').addEventListener('submit', ((e) => {
+        e.preventDefault();
+        const validate = formValidation();
+        if (validate) window.location.href = 'ticket.html';
+    }))
+</script>
