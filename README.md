@@ -9,7 +9,7 @@ Here you'll find small web projects and demos that showcase my work, experiments
 
 | Project Name       | Description                            | Live Demo                                      |
 |--------------------|----------------------------------------|------------------------------------------------|
-| **Conference Ticket Generator**| A simple, responsive ticket generator UI with interactive form validation.  | [View Demo](https://you.github.io/public-html-css-projects/ticket-generator/)
+| **Conference Ticket Generator**| A simple, responsive ticket generator UI with interactive form validation.  | [View Demo](https://feralyth.github.io/html-css-public-projects/conference-ticket-generator/)
 
 ---
 
