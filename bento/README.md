@@ -19,11 +19,22 @@ This is project is a solution to the [Conference ticket generator challenge on F
 ### The challenge
 
 Users should be able to:
+
+- Complete the form with their details
+- Receive form validation messages if:
+  - Any field is missed
+  - The email address is not formatted correctly
+  - The avatar upload is too big or the wrong image format
+- Complete the form only using their keyboard
+- Have inputs, form field hints, and error messages announced on their screen reader
+- See the generated conference ticket when they successfully submit the form
 - View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
 ### Links
 
-- Live Site URL: [View live site](https://feralyth.github.io/html-css-public-projects/conference-ticket-generator/index.html)
+- Solution URL: [solution](https://your-solution-url.com)
+- Live Site URL: [live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -32,16 +43,17 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Grid
 - Mobile-first workflow
 
 ### What I learned
 
-I learn how to use grid, using repeat, minmax, grid-area, grid-tempalte-column and grid-template-areas.
+I learn to adjust background image properly and add some decorative element that improve website aesthetic, understanding some of css property like gradient, transform, polygon, animation.
+
+Approach semantic html tag using header, main, footer, fieldset and etc.
 
 ### Continued development
 
-Want to build landing page or dashboard using css grid.
+I want to code big things like e-commerce only using html css offcourse with faster and more clean code in my future small project 😆,
 
 ### Useful resources
 

@@ -7,9 +7,10 @@ Here you'll find small web projects and demos that showcase my work, experiments
 
 ## Projects
 
-| Project Name       | Description                            | Live Demo                                      |
-|--------------------|----------------------------------------|------------------------------------------------|
-| **Conference Ticket Generator**| A simple, responsive ticket generator UI with interactive form validation.  | [View Demo](https://you.github.io/public-html-css-projects/ticket-generator/)
+| Project Name                   | Description                                                                 | Live Demo                                                                                 |
+|--------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **Conference Ticket Generator**| A simple, responsive ticket generator UI with interactive form validation.  | [View Demo](https://you.github.io/public-html-css-projects/conference-ticket-generator/)
+| **Bento**                      | Simple Grid.                                                                | [View Demo](https://you.github.io/public-html-css-projects/bento/)
 
 ---
 

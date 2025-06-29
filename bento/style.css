@@ -1,0 +1,315 @@
+:root {
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+
+  --font-primary: 'DM Sans', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+  background-color: hsl(0, 0%, 93%);
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 0.9;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -1.8px;
+  line-height: 0.9;
+  padding-block: 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: -1.6px;
+  padding-block: 10px;
+}
+
+p {
+  padding-block: 5px;
+  font-family: 1.2rem;
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  padding: 2rem 1rem;
+  gap: 40px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-purple {
+  background-color: var(--purple-500);
+}
+
+.bg-light-purple {
+  background-color: var(--purple-100);
+}
+
+.bg-yellow {
+  background-color: var(--yellow-500);
+}
+
+.bg-light-yellow {
+  background-color: var(--yellow-100);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.font-weight-light {
+  font-weight: 500;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-muted {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.text-yellow {
+  color: var(--yellow-500);
+}
+
+.text-purple {
+  color: var(--purple-500);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fluid {
+  border-radius: 10px;
+  padding: 30px 35px;
+}
+
+.min-fluid {
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.img__five-stars {
+  width: 190px;
+  display: block;
+  margin: 15px auto 0px;
+}
+
+.img__multiple-platforms {
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+  display: block;
+  background-color: var(--white);
+}
+
+.img__consistent-schedule {
+  width: 200px;
+  height: auto;
+  margin-bottom: -15px;
+}
+
+.img__schedule-posts {
+  width: 100%;
+  height: auto;
+}
+
+.img__grow-followers {
+  width: 250px;
+  height: auto;
+  margin-bottom: 30px;
+}
+.img__audience-growth {
+  width: 150px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.img__create-post {
+  width: 200px;
+  height: auto;
+  margin: 10px 0px;
+}
+
+.img__ai-content {
+  width: 200px;
+  height: auto;
+  margin-block: 10px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.p-block-10 {
+  padding-block: 10px;
+}
+
+.p-inline-40 {
+  padding-inline: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 0.9;
+    font-weight: 500;
+  }
+
+  .min-fluid {
+    padding: 25px;
+  }
+
+  .container {
+    grid-template-columns: repeat(4, minmax(200px, 250px));
+    overflow: hidden;
+    align-items: stretch;
+    gap: 30px;
+    grid-template-areas:
+      'create-post stars stars schedule-posts'
+      'create-post mul-plat schedule schedule-posts'
+      'ai          mul-plat schedule schedule-posts'
+      'ai          audience followers followers'
+      'ai          audience followers followers';
+  }
+
+  #stars {
+    grid-area: stars;
+    padding: 50px;
+  }
+
+  #mul-plat {
+    grid-area: mul-plat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #schedule {
+    grid-area: schedule;
+  }
+
+  #schedule-posts {
+    grid-area: schedule-posts;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #schedule-posts h3 {
+    text-align: left;
+  }
+
+  #schedule-posts p {
+    text-align: left;
+    padding: 0;
+  }
+
+  #followers {
+    grid-area: followers;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #followers h2 {
+    text-align: left;
+    padding: 0;
+    letter-spacing: 1;
+  }
+
+  #followers img {
+    flex-basis: 100px;
+    width: 200px;
+    height: auto;
+    margin: 0;
+  }
+
+  #audience {
+    grid-area: audience;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #create-post {
+    grid-area: create-post;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  #ai {
+    grid-area: ai;
+  }
+
+  .img__consistent-schedule {
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: -31px;
+  }
+
+  .img__schedule-posts {
+    width: 100%;
+    height: auto;
+  }
+}
