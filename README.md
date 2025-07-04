@@ -12,6 +12,7 @@ Here you'll find small web projects and demos that showcase my work, experiments
 | **Conference Ticket Generator**| A simple, responsive ticket generator UI with interactive form validation.  | [View Demo](https://feralyth.github.io/html-css-public-projects/conference-ticket-generator/)  |
 | **Bento**                      | Simple Grid.                                                                | [View Demo](https://feralyth.github.io/html-css-public-projects/bento/)                        | 
 | **QR Code Componenet**         | A QR Code Componenet.                                                       | [View Demo](https://feralyth.github.io/html-css-public-projects/qr-code-component/)            | 
+| **Blog Preview Card**          | Card preview in a blog.                                                     | [View Demo](https://feralyth.github.io/html-css-public-projects/blog-preview-card/)            | 
 
 ---
 

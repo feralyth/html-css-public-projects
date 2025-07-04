@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+
+  --primary-font: 'Figtree', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__wrapper {
+  background-color: var(--white);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  gap: 20px;
+  border: 1px solid var(--gray-500);
+  box-shadow: 8px 10px var(--gray-950);
+}
+
+.card__thumbnail {
+  border-radius: 10px;
+}
+
+.card__tag {
+  background-color: var(--yellow);
+  display: inline-block;
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+.card__title {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.card__title:hover {
+  color: var(--yellow);
+}
+
+.card__desc {
+  color: var(--gray-500);
+}
+
+.card__publisher-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.card__publisher-wrapper img {
+  width: 40px;
+}
+
+@media screen and (min-width: 425px) {
+  .card__wrapper {
+    max-width: 400px;
+  }
+}

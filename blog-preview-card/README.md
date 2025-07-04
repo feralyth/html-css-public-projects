@@ -1,6 +1,6 @@
-# QR Code Component
+# Blog Preview Card
 
-This is project is a solution to the [QR Code Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). 
+This is project is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). 
 
 ## Table of contents
 
@@ -19,11 +19,13 @@ This is project is a solution to the [QR Code Component challenge on Frontend Me
 ### The challenge
 
 Users should be able to:
-- View the optimal layout for the interface depending on their device's screen size
+
+- See hover and focus states for all interactive elements on the page
 
 ### Links
 
-- Live Site URL: [View live site](https://feralyth.github.io/html-css-public-projects/conference-ticket-generator/index.html)
+- Solution URL: [solution](https://your-solution-url.com)
+- Live Site URL: [live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -32,13 +34,17 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Mobile-first workflow
 
 ### What I learned
 
-Refreshing about how flex css works
+I learn to adjust background image properly and add some decorative element that improve website aesthetic, understanding some of css property like gradient, transform, polygon, animation.
+
+Approach semantic html tag using header, main, footer, fieldset and etc.
 
 ### Continued development
 
+I want to code big things like e-commerce only using html css offcourse with faster and more clean code in my future small project 😆,
 
 ### Useful resources
 
