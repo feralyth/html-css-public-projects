@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  --font-family: 'Figtree', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+  font-weight: 400;
+  background-color: var(--grey-900);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--grey-800);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.card__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.card__bio {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card__avatar {
+  border-radius: 100%;
+  width: 100px;
+}
+
+.card__address {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.card__social-media__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.social-media {
+  padding: 15px;
+  background-color: var(--grey-700);
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1.1;
+  cursor: pointer;
+  transition: background-color 0.7s 100ms;
+}
+
+.social-media:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+@media screen and (min-width: 425px) {
+  .card {
+    max-width: 300px;
+    padding-inline: 40px;
+  }
+}
