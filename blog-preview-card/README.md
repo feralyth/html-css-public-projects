@@ -22,11 +22,6 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-### Links
-
-- Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
-
 ## My process
 
 ### Built with

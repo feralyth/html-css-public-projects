@@ -1,6 +1,6 @@
 # Social links profile
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
 
 ## Table of contents
 
@@ -20,10 +20,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
-
-### Links
-
-- Live Site URL: [View live site](https://feralyth.github.io/html-css-public-projects/conference-ticket-generator/index.html)
 
 ## My process
 

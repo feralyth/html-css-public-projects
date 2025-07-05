@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  --font-primary: 'Outfit', sans-serif;
+  --font-secondary: 'Young Serif', serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  color: var(--stone-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--stone-150);
+}
+main {
+  max-width: 1000px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -5px;
+}
+
+article {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: var(--white);
+}
+
+h1,
+h2 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--stone-900);
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--brown-800);
+}
+
+ul,
+ol {
+  padding-left: 35px;
+}
+
+li {
+  margin-block: 10px;
+}
+
+ul li::marker {
+  color: var(--brown-800);
+  font-size: 12px;
+}
+
+.callout {
+  background-color: var(--rose-50);
+  padding: 20px;
+}
+
+.callout h3 {
+  color: var(--rose-800);
+}
+
+.callout ul li::marker {
+  color: var(--rose-800);
+}
+
+table {
+  margin-block: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  font-weight: 400;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+td {
+  color: var(--brown-800);
+  font-weight: 600;
+}

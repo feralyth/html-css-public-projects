@@ -21,10 +21,6 @@ This is project is a solution to the [Conference ticket generator challenge on F
 Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 
-### Links
-
-- Live Site URL: [View live site](https://feralyth.github.io/html-css-public-projects/conference-ticket-generator/index.html)
-
 ## My process
 
 ### Built with

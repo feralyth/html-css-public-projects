@@ -1,6 +1,6 @@
-# QR Code Component
+# Recipe page
 
-This is project is a solution to the [QR Code Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). 
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 
 ## Table of contents
 
@@ -19,8 +19,9 @@ This is project is a solution to the [QR Code Component challenge on Frontend Me
 ### The challenge
 
 Users should be able to:
-- View the optimal layout for the interface depending on their device's screen size
 
+- View the optimal layout for the interface depending on their device's screen size
+- Structure semantic HTML.
 
 ## My process
 
@@ -28,14 +29,12 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 
 ### What I learned
 
-Refreshing about how flex css works
+Semantic HTML on article page
 
 ### Continued development
-
 
 ### Useful resources
 

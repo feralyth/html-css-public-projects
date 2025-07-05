@@ -13,7 +13,8 @@ Here you'll find small web projects and demos that showcase my work, experiments
 | **Bento**                       | Simple grid.                                                               | [View Demo](https://feralyth.github.io/html-css-public-projects/bento/)                       |
 | **QR Code Componenet**          | A QR code componenet.                                                      | [View Demo](https://feralyth.github.io/html-css-public-projects/qr-code-component/)           |
 | **Blog Preview Card**           | Card preview in a blog.                                                    | [View Demo](https://feralyth.github.io/html-css-public-projects/blog-preview-card/)           |
-| **Social links profile**        | A social links profile.                                                    | [View Demo](https://feralyth.github.io/html-css-public-projects/social-links-profile/)        |
+| **Social Links Profile**        | A social links profile.                                                    | [View Demo](https://feralyth.github.io/html-css-public-projects/social-links-profile/)        |
+| **Recipe Page**                 | A recipe page.                                                             | [View Demo](https://feralyth.github.io/html-css-public-projects/recipe-page/)                 |
 
 ---
 
