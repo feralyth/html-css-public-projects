@@ -1,7 +1,7 @@
 # Public HTML & CSS Projects
 
-Welcome to my collection of public HTML & CSS projects!  
-Here you'll find small web projects and demos that showcase my work, experiments, and learning progress.
+Welcome to my collection of public HTML & CSS mini projects!  
+Here you'll find mini web projects and demos that showcase my playground.
 
 ---
 
@@ -15,6 +15,7 @@ Here you'll find small web projects and demos that showcase my work, experiments
 | **Blog Preview Card**           | Card preview in a blog.                                                    | [View Demo](https://feralyth.github.io/html-css-public-projects/blog-preview-card/)           |
 | **Social Links Profile**        | A social links profile.                                                    | [View Demo](https://feralyth.github.io/html-css-public-projects/social-links-profile/)        |
 | **Recipe Page**                 | A recipe page.                                                             | [View Demo](https://feralyth.github.io/html-css-public-projects/recipe-page/)                 |
+| **Product Review**              | A card product review.                                                     | [View Demo](https://feralyth.github.io/html-css-public-projects/product-review/)              |
 
 ---
 
@@ -29,7 +30,7 @@ Here you'll find small web projects and demos that showcase my work, experiments
 
 ## About Me
 
-Hi my name Feralyth I’m currios about front-end development and continuously learning modern HTML, CSS, and JavaScript techniques. This repository is a curated set of projects I want to share publicly.
+Hi my name Feralyth I’m currios about technology. This repository is a curated set of projects I want to share publicly.
 
 ---
 
