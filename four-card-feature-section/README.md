@@ -1,6 +1,6 @@
-# Bento
+# Four card feature section solution
 
-This is project is a solution to the [Bento grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). 
+This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
 
 ## Table of contents
 
@@ -29,22 +29,20 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Grid
-- Mobile-first workflow
 
 ### What I learned
 
-I learn to adjust background image properly and add some decorative element that improve website aesthetic, understanding some of css property like gradient, transform, polygon, animation.
-
-Approach semantic html tag using header, main, footer, fieldset and etc.
+Learning typohrahy responsive and refreshing about how flex and grid in css works
 
 ### Continued development
 
-I want to code big things like e-commerce only using html css offcourse with faster and more clean code in my future small project 😆,
+Add more complexity frontend
 
 ### Useful resources
 
 - [W 3 Schools](https://www.w3schools.com/css/default.asp) - Simple documentation easy to understand.
 - [MDN Web Docs ](https://developer.mozilla.org/en-US/docs/Web/API) - Very detailed documentation good when you want to deep dive learning.
+- [Web Dev](https://web.dev/) - Recomended documentation for building with modern style.
 
 ## Author
 

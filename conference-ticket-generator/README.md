@@ -6,7 +6,6 @@ This is project is a solution to the [Conference ticket generator challenge on F
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)

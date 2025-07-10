@@ -35,7 +35,7 @@ Users should be able to:
 Refreshing about how flex css works
 
 ### Continued development
-
+Add more complexity frontend
 
 ### Useful resources
 

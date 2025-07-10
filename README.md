@@ -16,6 +16,7 @@ Here you'll find mini web projects and demos that showcase my playground.
 | **Social Links Profile**        | A social links profile.                                                    | [View Demo](https://feralyth.github.io/html-css-public-projects/social-links-profile/)        |
 | **Recipe Page**                 | A recipe page.                                                             | [View Demo](https://feralyth.github.io/html-css-public-projects/recipe-page/)                 |
 | **Product Review**              | A card product review.                                                     | [View Demo](https://feralyth.github.io/html-css-public-projects/product-review/)              |
+| **Four Card Feature Section**   | Card with grid display.                                                    | [View Demo](https://feralyth.github.io/html-css-public-projects/four-card-feature-section/)   |
 
 ---
 

@@ -6,7 +6,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -35,6 +34,7 @@ Users should be able to:
 Semantic HTML on article page
 
 ### Continued development
+Add more complexity frontend
 
 ### Useful resources
 
