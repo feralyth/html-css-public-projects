@@ -17,6 +17,7 @@ Here you'll find mini web projects and demos that showcase my playground.
 | **Recipe Page**                 | A recipe page.                                                             | [View Demo](https://feralyth.github.io/html-css-public-projects/recipe-page/)                 |
 | **Product Review**              | A card product review.                                                     | [View Demo](https://feralyth.github.io/html-css-public-projects/product-review/)              |
 | **Four Card Feature Section**   | Card with grid display.                                                    | [View Demo](https://feralyth.github.io/html-css-public-projects/four-card-feature-section/)   |
+| **Testimonial grid section**    | Testimonial grid section using grid css.                                   | [View Demo](https://feralyth.github.io/html-css-public-projects/testimonial-grid-section/)    |
 
 ---
 

@@ -1,0 +1,176 @@
+/* - Weights: 500, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  /* Color Primary */
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+
+  /* Color Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
+
+  /* Font */
+  --primary-font: 'Barlow Semi Condensed', sans-serif;
+}
+
+html {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-block: 4rem;
+  padding-inline: 2rem;
+  background-color: var(--grey-100);
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'daniel'
+    'jonathan'
+    'jeanette'
+    'patrick'
+    'kira';
+  gap: 20px;
+}
+
+.card {
+  z-index: 2;
+  padding: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 50px 100px 40px hsl(0, 0%, 83%);
+}
+
+.card__avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card__avatar-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.card__avatar-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card__avatar-detail-name {
+  margin: 0;
+}
+
+.card__avatar-detail-verified {
+  margin: 0;
+  font-weight: 200;
+}
+
+.card__description {
+  font-size: clamp(1.6rem, 1.4rem + 3vw, 1.7rem);
+  font-weight: 500;
+  z-index: 4;
+}
+
+.card__description-detail {
+  font-size: clamp(1rem, 1.4rem + 3vw, 1.2rem);
+  font-weight: 500;
+  z-index: 4;
+  line-height: 1.2;
+}
+
+.decoration {
+  display: none;
+  width: 120px;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  right: 10%;
+  top: 0;
+}
+
+#daniel {
+  grid-area: daniel;
+  position: relative;
+  background-color: var(--purple-500);
+}
+
+#jonathan {
+  grid-area: jonathan;
+  background-color: var(--grey-500);
+  color: var(--grey-200);
+}
+
+#jeanette {
+  grid-area: jeanette;
+  background-color: white;
+  color: var(--grey-400);
+}
+
+#patrick {
+  grid-area: patrick;
+  background-color: var(--dark-blue);
+  color: var(--grey-200);
+}
+
+#kira {
+  grid-area: kira;
+  background-color: white;
+  color: var(--grey-400);
+}
+
+#daniel .card__description,
+#jonathan .card__description,
+#patrick .card__description {
+  color: white;
+}
+
+#daniel .card__description-detail,
+#jonathan .card__description-detail,
+#patrick .card__description-detail {
+  color: var(--grey-100);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+    grid-template-columns: repeat(4, minmax(200px, 300px));
+    grid-template-areas:
+      'daniel daniel jonathan kira'
+      'jeanette patrick patrick kira';
+  }
+
+  .card {
+    padding-inline: 3rem;
+  }
+
+  .decoration {
+    display: block;
+  }
+}
