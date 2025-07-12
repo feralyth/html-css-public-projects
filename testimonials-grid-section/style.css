@@ -47,7 +47,8 @@ main {
 }
 
 .card {
-  z-index: 2;
+  position: relative;
+  z-index: 1;
   padding: 2rem;
   color: white;
   border-radius: 0.5rem;
@@ -85,13 +86,11 @@ main {
 .card__description {
   font-size: clamp(1.6rem, 1.4rem + 3vw, 1.7rem);
   font-weight: 500;
-  z-index: 4;
 }
 
 .card__description-detail {
   font-size: clamp(1rem, 1.4rem + 3vw, 1.2rem);
   font-weight: 500;
-  z-index: 4;
   line-height: 1.2;
 }
 
