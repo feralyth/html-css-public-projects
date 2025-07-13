@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root {
+  /* Color */
+  --clr-blue-grayish-dark: hsl(217, 19%, 35%);
+  --clr-blue-desaturated-dark: hsl(214, 17%, 51%);
+  --clr-blue-grayish: hsl(212, 23%, 69%);
+  --clr-blue-grayish-light: hsl(210, 46%, 95%);
+
+  /* Font weight */
+  --font-normal: 500;
+  --font-bold: 700;
+
+  /* Font */
+  --primary-font: "Manrope", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--primary-font);
+  font-weight: var(--font-normal);
+  font-size: 13px;
+}
+
+body {
+  background-color: var(--clr-blue-grayish-light);
+  padding: 5rem 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: clamp(1.2rem, 0.4rem + 3vw, 1.7rem);
+  font-weight: var(--font-bold);
+  color: var(--clr-blue-grayish-dark);
+}
+
+p {
+  font-size: 1.06rem;
+  color: var(--clr-blue-desaturated-dark);
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.8rem;
+}
+
+.card-image {
+  width: 100%;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.card-description-wrapper {
+  padding: 2rem 2rem 0rem;
+}
+
+.card-description h1 {
+  padding-bottom: 1rem;
+} 
+
+.card-description p {
+  padding-bottom: 2rem;
+} 
+
+.card-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  height: 70px;
+}
+
+.card-avatar {
+  display: flex;
+  gap: 1rem;
+}
+
+.avatar-name {
+  font-weight: var(--font-bold);
+  font-size: 1rem;
+  color: var(--clr-blue-grayish-dark);
+}
+
+.avatar-date {
+  color: var(--clr-blue-grayish);
+}
+
+.card-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.share {
+  background-color: var(--clr-blue-grayish-light);
+  border-radius: 100%;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.share-wrapper {
+  display: flex;
+  background-color: var(--clr-blue-grayish-dark);
+  justify-content: space-between;
+  padding: 1.1rem 2rem;
+  height: 70px;
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  align-items: center;
+}
+
+.share-wrapper p {
+  font-size: 1rem;
+  color: var(--clr-blue-grayish);
+  letter-spacing: 0.5rem;
+  font-weight: var(--font-normal);
+  margin-right: 0.2rem;
+}
+
+.sosmed-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.sosmed {
+  width: 20px;
+  height: 20px;
+}
+
+.active {
+  background-color: var(--clr-blue-desaturated-dark);
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width:600px) {
+  .card {
+    display: flex;
+    max-width: 780px;
+  }
+
+  .card-image-container {
+    width: 100%;
+  }
+
+  .card-image{
+    flex-basis: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    object-position: left;
+  }
+
+  .card-description-wrapper{
+    flex-grow: 1;
+    padding: 2.5rem 3.5rem 0rem;
+  }
+
+  .share-wrapper {
+    position: absolute;
+  }
+}
