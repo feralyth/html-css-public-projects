@@ -1,15 +1,19 @@
-const buttonShare = document.getElementById('share');
-const buttonShareActive = document.getElementById('share-active');
+const shareButton = document.getElementById('share-button');
+const shareButtonActive = document.getElementById('share-button-active');
+const tooltip = document.getElementById('tooltip');
+let tooltipActive = false;
 
-const shareSection = document.getElementById('share-section');
-const avatarSection = document.getElementById('avatar-section');
-
-buttonShare.addEventListener('click', () => {
-  shareSection.classList.remove('hidden');
-  avatarSection.classList.add('hidden');
+shareButton.addEventListener('click', () => {
+  if (tooltipActive === false) {
+    tooltip.classList.remove('hidden');
+    tooltipActive = true;
+  } else {
+    tooltip.classList.add('hidden');
+    tooltipActive = false;
+  }
 })
 
-buttonShareActive.addEventListener('click', () => {
-  shareSection.classList.add('hidden');
-  avatarSection.classList.remove('hidden');
+shareButtonActive.addEventListener('click', () => {
+  tooltip.classList.add('hidden');
+  tooltipActive = false;
 });
